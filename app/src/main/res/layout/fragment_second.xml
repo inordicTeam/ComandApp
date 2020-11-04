@@ -6,16 +6,65 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/viewFistWord"
+        android:id="@+id/resultInputFirstWord"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewFirstWord"
+        android:textColor="@android:color/black"
+        android:text="Вы ввели:"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/viewFirstWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/secondInput"
+        android:textColor="@android:color/black"
+        android:text="Second Activity"
+        android:textSize="24sp"
+        android:layout_marginBottom="30sp"/>
+
+    <EditText
+        android:id="@+id/secondInput"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="@android:color/black"
-        android:text="Second Activity"
-        android:textSize="24sp"/>
+        android:hint="Введите слово заново"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="@id/secondInput"
+        app:layout_constraintEnd_toEndOf="@id/secondInput"
+        app:layout_constraintTop_toBottomOf="@id/secondInput">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/secondButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"/>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

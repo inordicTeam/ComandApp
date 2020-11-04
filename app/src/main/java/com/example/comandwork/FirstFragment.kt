@@ -27,7 +27,7 @@ class FirstFragment : Fragment() {
             }
 
             fragmentManager?.beginTransaction()
-                ?.replace(R.id.fragmentContainer, SecondFragment())
+                ?.replace(R.id.fragmentContainer, fragment)
                 ?.addToBackStack(null)
                 ?.commit()
         }
