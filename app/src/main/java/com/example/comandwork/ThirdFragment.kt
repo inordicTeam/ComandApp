@@ -18,6 +18,20 @@ class ThirdFragment: Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewSecondWord.text = arguments?.getString("secondWord")
+        resultSecondWorld.text = arguments?.getString("secondWord")
+
+        backButtons.setOnClickListener { fragmentManager?.popBackStack()  }
+        thirdButtonOK.setOnClickListener {
+            val thirdWorld = thirdInput.text.toString()
+            val fragmentThird = FourthFragments()
+            fragmentThird.arguments = Bundle().also {
+                it.putString("ThirdWorld", thirdWorld )
+            }
+
+            fragmentManager?.beginTransaction()
+                ?.replace(R.id.fragmentContainer, fragmentThird)
+                ?.addToBackStack(null)
+                ?.commit()
+        }
     }
 }

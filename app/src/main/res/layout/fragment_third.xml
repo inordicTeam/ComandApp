@@ -15,9 +15,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:textColor="@android:color/black"
-        android:text="Third Activity"
+        android:text="Вы ввели"
         android:textSize="24sp"
         android:layout_marginBottom="30sp"/>
+    <TextView
+        android:id="@+id/resultSecondWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Activity"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/viewSecondWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30sp"/>
+    <EditText
+        android:id="@+id/thirdInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите текст заново"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/resultSecondWorld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/thirdInput"
+        app:layout_constraintStart_toStartOf="@id/thirdInput"
+        app:layout_constraintEnd_toEndOf="@id/thirdInput">
+
+        <Button
+            android:id="@+id/backButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/thirdButtonOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"/>
+
+    </LinearLayout>
 
 
 
