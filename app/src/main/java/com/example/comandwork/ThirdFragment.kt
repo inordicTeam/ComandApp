@@ -16,7 +16,7 @@ class ThirdFragment: Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_third, container, false)
     }
-
+//new commit
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewSecondWord.text = arguments?.getString("secondWord")
     }
