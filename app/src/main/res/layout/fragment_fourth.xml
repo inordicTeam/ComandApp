@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/viewSecondWord"
+        android:id="@+id/viewFourthWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,18 +19,18 @@
         android:textSize="24sp"
         android:layout_marginBottom="30sp"/>
     <TextView
-        android:id="@+id/resultSecondWorld"
+        android:id="@+id/resultThirdWorld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Third Activity"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/viewSecondWord"
+        app:layout_constraintTop_toBottomOf="@id/viewFourthWord"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="30sp"/>
     <EditText
-        android:id="@+id/thirdInput"
+        android:id="@+id/fortchInput"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Введите текст заново"
@@ -44,12 +44,12 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/thirdInput"
-        app:layout_constraintStart_toStartOf="@id/thirdInput"
-        app:layout_constraintEnd_toEndOf="@id/thirdInput">
+        app:layout_constraintTop_toBottomOf="@id/fortchInput"
+        app:layout_constraintStart_toStartOf="@id/fortchInput"
+        app:layout_constraintEnd_toEndOf="@id/fortchInput">
 
         <Button
-            android:id="@+id/backButtons"
+            android:id="@+id/backButtonsT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -57,7 +57,7 @@
 
 
         <Button
-            android:id="@+id/thirdButtonOK"
+            android:id="@+id/fortchButtonOK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
