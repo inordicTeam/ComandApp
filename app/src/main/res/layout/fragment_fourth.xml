@@ -5,17 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
-        android:id="@+id/viewFourthWorld"
+        android:id="@+id/viewFourthWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="fourthFragment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:textColor="@android:color/black"
+        android:text="Вы ввели"
         android:textSize="24sp"
         android:layout_marginBottom="30sp"/>
+    <TextView
+        android:id="@+id/resultThirdWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Activity"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/viewFourthWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30sp"/>
+    <EditText
+        android:id="@+id/fortchInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите текст заново"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/resultSecondWorld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/fortchInput"
+        app:layout_constraintStart_toStartOf="@id/fortchInput"
+        app:layout_constraintEnd_toEndOf="@id/fortchInput">
+
+        <Button
+            android:id="@+id/backButtonsT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"/>
+
+
+        <Button
+            android:id="@+id/fortchButtonOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"/>
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
