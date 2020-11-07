@@ -34,6 +34,6 @@ class FourthFragments : Fragment(){
                 ?.addToBackStack(null)
                 ?.commit()
         }
-        viewFourthWorld.text = arguments?.getString("ThirdWorld")
+
     }
 }
