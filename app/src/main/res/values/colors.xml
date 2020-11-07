@@ -3,4 +3,6 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="input_box_solid_color">#BBDEFB</color>
+    <color name="input_box_stroke_color">#29B6F6</color>
 </resources>
